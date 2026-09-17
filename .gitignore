@@ -1,0 +1,15 @@
+build/
+dist/
+diagnostics/
+.cache/
+release/
+*.exe
+*.dll
+*.ax
+*.zip
+*.res
+*.log
+settings.ini
+third_party/lav-video/LAVFilters.Dependencies.manifest
+*.obj
+*.pdb

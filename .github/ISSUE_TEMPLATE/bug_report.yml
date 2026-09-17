@@ -1,0 +1,22 @@
+name: Bug report
+description: Report a reproducible problem with capture, sound, rendering, or installation.
+body:
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and actual behavior
+      description: Include the steps that reproduce the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: configuration
+    attributes:
+      label: Configuration
+      description: SwitchView version, Windows version, capture-card model, selected format, GPU/driver, renderer, and Smooth Motion state.
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Relevant diagnostics
+      description: Paste relevant text only. Remove personal paths and device IDs. Do not attach gameplay captures unless you want them public.

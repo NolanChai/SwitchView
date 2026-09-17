@@ -1,0 +1,10 @@
+* text=auto eol=lf
+*.cpp text eol=lf
+*.h text eol=lf
+*.md text eol=lf
+*.ps1 text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+*.manifest text eol=lf
+*.rc.in text eol=lf
+third_party/** -whitespace

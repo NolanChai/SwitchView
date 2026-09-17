@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "dependencies": [
+    {
+      "id": "mpc-video-renderer",
+      "version": "0.10.7.2560",
+      "url": "https://github.com/Aleksoid1978/VideoRenderer/releases/download/0.10.7/MpcVideoRenderer-0.10.7.2560.zip",
+      "sha256": "3d8461d05354f7c3db8ec95e46c92b5737d2e401697a4990eaf6dc9eaa1ee147",
+      "files": [
+        {
+          "name": "MpcVideoRenderer64.ax",
+          "sha256": "7d63a92b3a3fe277fd01ce9e8f2509d0fc50f7392e3bb1cc6a5f6877a363a412"
+        }
+      ],
+      "source": {
+        "url": "https://github.com/Aleksoid1978/VideoRenderer.git",
+        "tag": "0.10.7",
+        "commit": "fd3a829d820042437a4ad796b36324d88369cd0e",
+        "submodules": {
+          "external/BaseClasses": "de6f4a9971efcd4f53b2ef94552914c5af25c638",
+          "external/minhook": "c3fcafdc10146beb5919319d0683e44e3c30d537"
+        }
+      }
+    },
+    {
+      "id": "lav-video",
+      "version": "0.83",
+      "url": "https://github.com/Nevcairiel/LAVFilters/releases/download/0.83/LAVFilters-0.83-x64.zip",
+      "sha256": "0126982f47157bb86a6dbb43c4f332f7f98beba9ad552c19b65f9db2e7d4f186",
+      "files": [
+        {
+          "name": "LAVVideo.ax",
+          "sha256": "30dc9e00aebfde9ad85add4866faaf10a8d5bad7574d02b9229ef545c7b40d78"
+        },
+        {
+          "name": "avcodec-lav-63.dll",
+          "sha256": "ef802e806876290e22825b09f82c17aa30e0e4aea97960e196d207c70cee9648"
+        },
+        {
+          "name": "avutil-lav-61.dll",
+          "sha256": "8aea5f91fa28745777f4c1a8f33af0eba63486282c403d8386979aeeea8fb6c7"
+        },
+        {
+          "name": "swscale-lav-10.dll",
+          "sha256": "c4615d1b7101e2b05fc59bf553905704348e12b89ef9d69ec1967bec56f46a3c"
+        },
+        {
+          "name": "avfilter-lav-12.dll",
+          "sha256": "45c9d402f3f4d3ce7a5c0aa342bfdf9a2018d61cba3913acf31a7bd74b7ecf65"
+        },
+        {
+          "name": "swresample-lav-7.dll",
+          "sha256": "e111fb790deda2f08b3324529b67991870e83e3f6ec9b2fe6aed80b1634cb0b1"
+        },
+        {
+          "name": "avformat-lav-63.dll",
+          "sha256": "e53dbdc11022576a58b2f383cc1aa2c1fedc1398565a107ad6683f328e446b64"
+        },
+        {
+          "name": "libbluray.dll",
+          "sha256": "67301d2d3ea7bc6e86cb283f4c807cc6a70f51714d057709f00eeb84866ec6a1"
+        },
+        {
+          "name": "LAVFilters.Dependencies.manifest",
+          "sha256": "da51121e8f595a63473f3d602568b737cb4dba3eb9de036d8c051e8b95a6903b"
+        }
+      ],
+      "source": {
+        "url": "https://github.com/Nevcairiel/LAVFilters.git",
+        "tag": "0.83",
+        "commit": "fefb6987994ed56e4525e8a125f5fbb53707bc52",
+        "submodules": {
+          "ffmpeg": "599d3a140460e1b57c234fe064db5185fb76ee5b",
+          "libbluray": "2df828e7dfef1d8c3fe7ebc2e8b764064a3f69f3",
+          "libbluray/contrib/libudfread": "139a2194525f2745b98a98e4d8fa627d07440176",
+          "qsdecoder": "72e6b6a944460d3cbeffe13e78b88dd773a85602"
+        }
+      }
+    }
+  ],
+  "nvapi": {
+    "commit": "87dca625e83fd89a983e19b904e5f3a580da90d2",
+    "url": "https://github.com/NVIDIA/nvapi",
+    "license": "MIT"
+  }
+}
