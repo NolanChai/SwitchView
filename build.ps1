@@ -56,6 +56,10 @@ try {
         'mpc-video-renderer/PROVENANCE.md' = 'MPC-Video-Renderer-source.md'
         'lav-video/PROVENANCE.md' = 'LAV-Video-source.md'
         'nvapi/PROVENANCE.md' = 'NVAPI-source.md'
+        'notices/MinHook-BSD.txt' = 'MinHook-BSD.txt'
+        'notices/libbluray-LGPL-2.1.txt' = 'libbluray-LGPL-2.1.txt'
+        'notices/libudfread-LGPL-2.1.txt' = 'libudfread-LGPL-2.1.txt'
+        'notices/Microsoft-samples-MIT.txt' = 'Microsoft-samples-MIT.txt'
     }
     New-Item -ItemType Directory -Force -Path (Join-Path $distDirectory 'licenses') | Out-Null
     foreach ($file in $licenseFiles.Keys) {

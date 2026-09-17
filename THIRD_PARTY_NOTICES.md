@@ -9,7 +9,8 @@ See LICENSE. Upstream components retain their own copyright and license notices.
 | [LAV Filters](https://github.com/Nevcairiel/LAVFilters) | 0.83 | GPL-2.0-or-later | Unmodified LAV Video and runtime dependencies |
 | FFmpeg, as built by LAV | Pinned LAV submodule | GPL-3.0-or-later configuration; individual files retain their licenses | avcodec, avutil, avfilter, avformat, swscale, swresample |
 | libbluray and libudfread | Pinned LAV submodules | LGPL-2.1-or-later and upstream file notices | libbluray runtime dependency |
-| BaseClasses and MinHook | Pinned MPC submodules | Upstream notices, including BSD-style licenses | Used by MPC Video Renderer |
+| BaseClasses | Pinned MPC submodule | Original Microsoft samples under MIT; MPC-BE modifications under project licensing | Used by MPC Video Renderer |
+| MinHook and HDE | Pinned MPC submodule | BSD-style licenses | Used by MPC Video Renderer |
 | [NVIDIA NVAPI](https://github.com/NVIDIA/nvapi) | 87dca625e83fd89a983e19b904e5f3a580da90d2 | MIT | Headers only; the installed system driver is loaded at runtime |
 
 Runtime downloads and per-file hashes are pinned in `dependencies.lock.json`.

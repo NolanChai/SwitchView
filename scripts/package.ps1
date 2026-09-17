@@ -1,4 +1,4 @@
-param([switch]$SkipBuild, [switch]$Offline)
+param([switch]$SkipBuild, [switch]$Offline, [string]$OutputDirectory)
 $ErrorActionPreference = 'Stop'
 Set-StrictMode -Version Latest
 $repository = Split-Path $PSScriptRoot -Parent
@@ -11,7 +11,7 @@ $commit = & git -C $repository rev-parse HEAD
 if ($LASTEXITCODE -ne 0) { throw 'Cannot resolve release source commit.' }
 & (Join-Path $PSScriptRoot 'fetch-sources.ps1') -Offline:$Offline
 $lock = Get-Content -LiteralPath (Join-Path $repository 'dependencies.lock.json') -Raw | ConvertFrom-Json
-$output = Join-Path $repository 'release'
+$output = if ($OutputDirectory) { [IO.Path]::GetFullPath($OutputDirectory) } else { Join-Path $repository 'release' }
 $stage = Join-Path $repository ('.cache\release-' + [guid]::NewGuid().ToString('N'))
 $portable = Join-Path $stage "SwitchView-$version-windows-x64"
 $sourceBundle = Join-Path $stage 'dependencies'

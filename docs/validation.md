@@ -50,5 +50,12 @@ rejection. These tests do not open capture devices or change NVIDIA profiles.
 The historical executable hash above identifies the original hardware-tested
 build; use the release checksum file for the distributed versioned package.
 
+On September 17, the versioned package also passed a 720p/60 VSR capture smoke
+run with device restart, fullscreen transitions, flowing video/audio samples,
+and zero audio underruns. The input was black and silent during this run, so it
+does not repeat the earlier active-game picture, sound, or frame-generation
+assessment. A clean Windows 2022 GitHub runner passed the build, dependency
+downloads, audio queue, and package/runtime checks.
+
 Audio queue unit checks cover ordering, bounded overflow, wraparound, silence,
 delay reserve, and underrun filling. Ordinary use records no video or audio.
